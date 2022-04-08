@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001;
 
 app.options('*', cors());
 
-app.post("/", function(req, res){
+app.get("/", function(req, res){
     res.set('access-control-allow-headers', '*');
     res.set('access-control-allow-methods', '*');
     res.set('access-control-allow-origin', '*');
